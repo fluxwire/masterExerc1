@@ -30,7 +30,7 @@ class MenuPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Text(
-              'Excolha o mockup:',
+              'Escolha o mockup:',
               style: TextStyle(fontSize: 20),
             ),
             const SizedBox(
