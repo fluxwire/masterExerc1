@@ -1,5 +1,7 @@
 import 'package:firstmockup/theme/app_color.dart';
+import 'package:firstmockup/theme/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'components/tinderbutton.dart';
 
@@ -38,37 +40,69 @@ class TinderPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const Padding(
-                  padding: EdgeInsets.fromLTRB(40, 0, 40, 25),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(40, 0, 40, 25),
                   child: Text.rich(
                     textAlign: TextAlign.center,
                     TextSpan(
                       text:
-                          'By tapping Create Account or Sign In, you agree to Terms. Ler how twe process your data in our ',
-                      style: TextStyle(
-                        color: AppColor.tinderText,
+                          'By tapping Create Account or Sign In, you agree to ',
+                      style: GoogleFonts.getFont(
+                        'Roboto',
+                        textStyle: const TextStyle(
+                          color: AppColor.tinderText,
+                        ),
                       ),
                       children: [
                         TextSpan(
+                          text: 'Terms',
+                          style: GoogleFonts.getFont(
+                            'Roboto',
+                            textStyle: const TextStyle(
+                              color: AppColor.tinderText,
+                              fontWeight: FontWeight.bold,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ),
+                        TextSpan(
+                          text: '. Learn how we process your data in our ',
+                          style: GoogleFonts.getFont(
+                            'Roboto',
+                            textStyle: const TextStyle(
+                              color: AppColor.tinderText,
+                            ),
+                          ),
+                        ),
+                        TextSpan(
                           text: 'Privacy Policy',
-                          style: TextStyle(
-                            color: AppColor.tinderText,
-                            fontWeight: FontWeight.bold,
-                            decoration: TextDecoration.underline,
+                          style: GoogleFonts.getFont(
+                            'Roboto',
+                            textStyle: const TextStyle(
+                              color: AppColor.tinderText,
+                              fontWeight: FontWeight.bold,
+                              decoration: TextDecoration.underline,
+                            ),
                           ),
                         ),
                         TextSpan(
                           text: ' and ',
-                          style: TextStyle(
-                            color: AppColor.tinderText,
+                          style: GoogleFonts.getFont(
+                            'Roboto',
+                            textStyle: const TextStyle(
+                              color: AppColor.tinderText,
+                            ),
                           ),
                         ),
                         TextSpan(
-                          text: 'Cookies Policy',
-                          style: TextStyle(
-                            color: AppColor.tinderText,
-                            fontWeight: FontWeight.bold,
-                            decoration: TextDecoration.underline,
+                          text: 'Cookies Policy.',
+                          style: GoogleFonts.getFont(
+                            'Roboto',
+                            textStyle: const TextStyle(
+                              color: AppColor.tinderText,
+                              fontWeight: FontWeight.bold,
+                              decoration: TextDecoration.underline,
+                            ),
                           ),
                         ),
                       ],
@@ -99,13 +133,18 @@ class TinderPage extends StatelessWidget {
                     imagemAssetIcon: 'assets/images/bubble.png',
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.fromLTRB(0, 25, 0, 25),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 25, 0, 25),
                   child: Center(
-                    child: Text('Trouble Signing In?',
-                        style: TextStyle(
+                    child: Text(
+                      'Trouble Signing In?',
+                      style: GoogleFonts.getFont(
+                        'Roboto',
+                        textStyle: const TextStyle(
                           color: AppColor.tinderText,
-                        )),
+                        ),
+                      ),
+                    ),
                   ),
                 )
               ],

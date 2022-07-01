@@ -1,7 +1,10 @@
 import 'package:firstmockup/theme/app_color.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
+  static final tinderFont = GoogleFonts.getFont('Roboto');
+
   static ButtonStyle tinderStyle = OutlinedButton.styleFrom(
     minimumSize: const Size(88, 40),
     side: const BorderSide(

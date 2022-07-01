@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../theme/app_color.dart';
 import '../theme/theme.dart';
@@ -34,7 +35,12 @@ class TinderButton extends StatelessWidget {
           Center(
             child: Text(
               buttonLabel,
-              style: TextStyle(color: AppColor.tinderText),
+              style: GoogleFonts.getFont(
+                'Roboto',
+                textStyle: const TextStyle(
+                  color: AppColor.tinderText,
+                ),
+              ),
             ),
           )
         ],

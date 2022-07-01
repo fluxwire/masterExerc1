@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_color.dart';
 import '../theme/theme.dart';
 
@@ -28,14 +29,18 @@ class MoneyButton extends StatelessWidget {
             width: 20,
             height: 20,
           ),
-          SizedBox(
+          const SizedBox(
             width: 5,
           ),
           Text(
             buttonLabel,
-            style: const TextStyle(
-              color: AppColor.colorText,
-              fontSize: 16,
+            style: GoogleFonts.getFont(
+              'Roboto',
+              textStyle: const TextStyle(
+                color: AppColor.colorText,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             textAlign: TextAlign.center,
           ),
